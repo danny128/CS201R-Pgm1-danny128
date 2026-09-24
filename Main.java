@@ -20,20 +20,33 @@ public class Main {
 
     //TASK 1:
     //add code to input a string that replaces the value in 'words'
-
+    System.out.println("Please enter a new string: ");
+    words = scanner.next();
     //print the string
+    System.out.println(words);
 
 
 
     //TASK 2:
     //add code to input a new value for the variable 'letter'
     //'letter' is defined in line 18
+    System.out.println("Please enter one letter: ");
+    letter = scanner.next().charAt(0);
 
     //TASK 3:
     //if the letter entered is A or B - print "You did GREAT!"
     //if the letter is C - print "You did GOOD!"
     //if the letter is D or F - print "Try again"
     //if the letter is something else, print "Incorrect value"
+    if (letter == 'A' || letter == 'B') {
+        System.out.println("You did GREAT!");
+    } else if (letter == 'C') {
+        System.out.println("You did GOOD!");
+    } else if (letter == 'D' || letter == 'F') {
+        System.out.println("Try again");
+    } else {
+        System.out.println("Incorrect value");
+    }
 
 
     //LECTURE 1 DEMO:
